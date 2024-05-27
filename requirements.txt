@@ -1,6 +1,6 @@
-pandas==1.4.2
-statsmodels==0.13.2
-numpy==1.22.3
-scikit-learn==1.1.1
-joblib==1.1.0
-streamlit==1.10.0
+pandas
+statsmodels
+numpy
+scikit-learn
+joblib
+streamlit
