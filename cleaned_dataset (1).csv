@@ -1,0 +1,31 @@
+SampleID,BacterialSpecies,Strain,Gramreaction,CatalaseTest,OxidaseTest,Maltose,IndoleTest,MethylRedTest,VogesProskauerTest,CitrateUtilization,HydrogenSulfideProduction,Structure,Elevation,CellSize,cellShape,Motility,Flagella,SporeFormation,Capsule,UreaseProduction,GlucoseFermentation,NitrateReduction,LactoseFermentation,SucroseFermentation,LysineDecarboxylase,SorbitolFermentation,Media,V29,V30,V31,V32,V33,V34,CellLength,CellWidth
+1,Pseudomonas species,Pseudomonas aeruginosa,2,2,2,1,1,1,1,2,1,2,3,1.5mm * 0.5mm,1,2,2,1,1,1,2,2,1,1,2,1,1,1,1,1,1,1,1,1.5,0.5
+1,Pseudomonas species,Pseudomonas putida,2,2,2,3,1,1,1,2,1,1,1,0.5mm*1.0mm,2,2,2,1,1,1,2,1,1,2,3,1,2,3,1,1,1,1,1,0.5,0.4
+2,Vibrio species,Vibrio cholerae,2,2,2,2,2,1,2,3,1,2,1,1.5mm*0.2mm,2,2,2,1,1,1,2,1,1,2,2,2,3,4,1,2,1,1,3,1.5,0.4
+1,Vibrio species,Vibrio alginolyticus,2,2,2,2,1,1,2,2,1,1,1,0.2mm* 0.8mm,3,2,2,1,1,1,2,2,1,2,2,2,1,1,1,1,1,1,2,0.2,0.4
+1,Vibrio species,Vibrio parahaemolyticus,2,2,2,2,1,2,1,1,1,1,1,0.3mm * 1.2mm,3,2,2,1,1,1,2,2,1,2,2,2,1,1,1,1,1,1,1,0.3,0.4
+3,Escherichia species,Escherichia coli,2,2,1,2,2,2,1,1,1,1,1,3mm * 0.6mm,4,2,2,1,2,1,2,2,2,1,2,2,4,5,1,1,1,1,1,1,0.4
+1,Escherichia species,Escherichia fergusonii,2,2,1,2,2,2,1,1,1,1,1,0.8mm * 1.5 mm,2,2,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,0.8,0.4
+1,Escherichia species,Escherichia vulneris,2,2,1,2,1,2,1,1,1,2,1,0.5mm*1.4 mm,2,2,1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,0.5,0.4
+8,Campylobacter species,Campylobacter jejuni,2,2,2,1,1,1,1,1,1,1,1,0.5mm*1.4 mm,4,2,2,1,2,1,1,3,1,1,1,1,1,1,1,1,1,1,1,0.2,0.4
+9,Clostridium Species,Clostridium botulinum,2,1,1,1,1,1,1,1,2,2,3,5mm *1.0 mm,4,2,2,2,1,1,2,1,1,1,1,1,1,3,1,1,1,1,1,5,1
+1,Clostridium Species,Clostridium difficile,2,1,1,1,1,1,1,1,2,1,1,0.5mm*1.4 mm,2,2,2,2,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,0.2,0.4
+1,Clostridium Species,Clostridium tetani,3,1,1,1,3,1,1,1,2,2,3,0.5mm*1.4 mm,4,2,2,2,1,1,1,1,1,1,1,1,7,5,1,1,1,1,1,4,0.5
+4,Citrobacter species,Citrobacter freundii,1,2,1,2,3,2,1,1,2,2,1,3mm * 0.6mm,4,1,2,1,1,3,2,2,2,2,1,2,4,6,2,3,1,2,1,1,0.4
+1,Citrobacter species,Citrobacter amalonaticus,1,2,1,2,2,2,1,2,1,2,2,3mm * 0.6mm,4,1,2,1,1,3,2,2,2,1,1,2,1,1,1,1,1,1,1,1.2,0.4
+1,Citrobacter species,Citrobacter baraakii,1,2,1,2,1,2,1,2,2,2,1,0.8mm*1.3mm,4,1,2,1,1,3,1,2,2,1,1,2,1,1,1,1,1,1,1,0.8,0.4
+5,Staphylococcus species,Staphylococcus aureus,2,2,1,2,1,2,2,2,1,1,1,3mm * 0.6mm,4,1,1,1,3,2,1,2,1,1,1,1,4,7,1,4,1,1,1,1,0.4
+1,Staphylococcus species,Staphylococcus epidermis,2,2,1,2,1,1,1,1,2,1,1,0.5mm*1.5 mm,2,1,1,1,3,2,2,2,2,2,1,1,1,8,1,1,1,1,1,0.5,0.4
+1,Staphylococcus species,Staphylococcus saprophyticus,2,2,1,2,1,1,1,1,2,2,1,0.8mm to 1.2 mm.,5,1,1,1,3,2,2,1,2,2,1,1,1,8,1,6,1,1,1,0.8,0.4
+6,Salmonella species,Salmonella enterica,1,2,1,2,1,2,1,2,2,1,1,2mm* 0.6mm,4,1,1,1,1,1,2,1,1,1,2,2,1,5,1,7,1,1,1,2,0.4
+1,Salmonella species,Salmonella bongori,1,2,1,2,1,2,1,2,2,1,1,3mm * 0.6mm,4,1,1,1,1,1,2,1,1,1,2,2,1,5,1,7,1,1,1,1,0.4
+1,Salmonella species,Salmonella typhi,1,2,1,2,1,2,1,1,2,1,1,2mm*3mm,4,1,1,1,1,1,2,1,1,1,1,2,5,5,1,1,1,1,1,2,0.4
+7,Shigella species,Shigella dysenteriae,1,1,1,1,3,2,1,1,1,1,1,2mm *0.5 mm,4,1,1,1,1,1,1,1,1,1,1,3,1,5,3,7,2,3,1,1,0.4
+1,Shigella species,Shigella boydii,1,1,1,1,3,2,1,1,1,1,1,3mm * 0.6mm,2,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,0.2,0.4
+1,Shigella species,Shigella flexneri,1,1,1,3,3,2,1,1,1,1,1,0.7mm*1.5 mm,2,1,1,1,1,1,1,1,1,1,1,1,6,1,1,1,3,1,1,0.7,0.4
+10,Enterococcus species,Enterococcus faecalis,2,1,1,2,1,1,2,1,1,2,1,0.5mm* 2.2mm,5,1,1,1,1,2,2,2,2,2,1,2,4,8,1,1,1,1,1,0.5,0.4
+1,Unknown,Enterococcus faecium,2,1,1,1,1,1,2,1,1,1,1,5 mm*1.0 mm,5,1,1,1,1,1,2,1,2,1,1,3,1,5,1,7,1,1,1,5,1
+1,Unknown,Enterococcus durans,2,1,1,1,1,1,2,1,1,1,1,0.5mm*1.5mm,6,1,1,1,1,1,2,1,2,3,1,1,1,3,1,1,1,1,1,0.5,0.4
+1,Pseudomonas species,Pseudomonas fluorescence,1,1,1,1,1,1,1,2,1,1,1,0.5mm*1.4 mm,0,2,2,1,1,1,2,2,1,1,1,1,1,2,1,1,1,1,1,0.2,0.4
+1,Campylobacter species,Campylobacter coli,1,1,1,1,1,1,1,1,2,1,1,0.5mm*1.4 mm,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,0.2,0.4
+1,Campylobacter species,Campylobacter lani,1,1,1,1,1,1,1,1,1,1,1,0.5mm*1.4 mm,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,0.2,0.4
