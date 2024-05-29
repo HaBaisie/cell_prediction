@@ -1,35 +1,49 @@
-# Streamlit App: Using the Saved Model
-
 import streamlit as st
-import joblib
 import pandas as pd
+import joblib
 
-# Load the saved model
-model = joblib.load("linear_regression_model.pkl")
+# Load the trained model and label encoder
+model = joblib.load("bacterial_species_classifier.pkl")
+label_encoder = joblib.load("label_encoder.pkl")
 
-# Streamlit app
-st.title("Cell Width Prediction")
+# Title of the Streamlit app
+st.title("Bacterial Species Prediction")
 
-# Input features
-catalase_test = st.number_input("Catalase Test Result", min_value=0, max_value=20, value=0)
-oxidase_test = st.number_input("Oxidase Test Result", min_value=0, max_value=20, value=0)
-maltose = st.number_input("Maltose Fermentation", min_value=0, max_value=20, value=0)
-indole_test = st.number_input("Indole Test Result", min_value=0, max_value=20, value=0)
-methyl_red_test = st.number_input("Methyl Red Test Result", min_value=0, max_value=20, value=0)
-voges_proskauer_test = st.number_input("Voges Proskauer Test Result", min_value=0, max_value=20, value=0)
+# Collecting user input features
+st.header("Input Features")
+catalase_test = st.selectbox("Catalase Test (0 or 1)", [0, 1])
+oxidase_test = st.selectbox("Oxidase Test (0 or 1)", [0, 1])
+maltose = st.number_input("Maltose", min_value=0.0, step=0.1)
+indole_test = st.selectbox("Indole Test (0 or 1)", [0, 1])
+methyl_red_test = st.selectbox("Methyl Red Test (0 or 1)", [0, 1])
+voges_proskauer_test = st.selectbox("Voges Proskauer Test (0 or 1)", [0, 1])
+cell_width = st.number_input("Cell Width (in mm)", min_value=0.0, step=0.1)
+cell_length = st.number_input("Cell Length (in mm)", min_value=0.0, step=0.1)
+cell_shape = st.selectbox("Cell Shape (0 or 1)", [0, 1])  # Assuming cellShape is binary encoded
 
-# Create a DataFrame for the input
-input_data = pd.DataFrame({
-    'const': [1],  # Add constant for intercept
-    'CatalaseTest': [catalase_test],
-    'OxidaseTest': [oxidase_test],
-    'Maltose': [maltose],
-    'IndoleTest': [indole_test],
-    'MethylRedTest': [methyl_red_test],
-    'VogesProskauerTest': [voges_proskauer_test]
-})
+# Prediction button
+if st.button("Predict Bacterial Species"):
+    # Create a dataframe with the input features
+    input_features = pd.DataFrame({
+        'CatalaseTest': [catalase_test],
+        'OxidaseTest': [oxidase_test],
+        'Maltose': [maltose],
+        'IndoleTest': [indole_test],
+        'MethylRedTest': [methyl_red_test],
+        'VogesProskauerTest': [voges_proskauer_test],
+        'CellWidth': [cell_width],
+        'CellLength': [cell_length],
+        'cellShape': [cell_shape]
+    })
+    
+    # Making predictions
+    prediction = model.predict(input_features)
+    
+    # Decoding the prediction
+    predicted_species = label_encoder.inverse_transform(prediction)[0]
+    
+    # Displaying the result
+    st.subheader(f"The predicted bacterial species is: {predicted_species}")
 
-# Predict CellWidth
-if st.button("Predict"):
-    cell_width_pred = model.predict(input_data)[0]
-    st.write(f"Predicted Cell Width: {cell_width_pred:.2f}")
+# To run this Streamlit app, save the code in a file named `app.py` and use the command:
+# streamlit run app.py
