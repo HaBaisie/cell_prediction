@@ -7,7 +7,7 @@ model = joblib.load("bacterial_species_classifier.pkl")
 label_encoder = joblib.load("label_encoder.pkl")
 
 # Title of the Streamlit app
-st.title("Bacterial Species Prediction")
+st.title("Bacterial Species Prediction 1")
 
 # Collecting user input features
 st.header("Input Features")
