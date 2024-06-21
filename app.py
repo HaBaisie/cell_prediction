@@ -42,8 +42,9 @@ if st.button("Predict Bacterial Species"):
     # Decoding the prediction
     predicted_species = label_encoder.inverse_transform(prediction)[0]
     
+    # Logging input features and prediction
+    st.write(f"Input Features: {input_features}")
+    st.write(f"Predicted Species Index: {prediction[0]}")
+    
     # Displaying the result
     st.subheader(f"The predicted bacterial species is: {predicted_species}")
-
-# To run this Streamlit app, save the code in a file named `app.py` and use the command:
-# streamlit run app.py
